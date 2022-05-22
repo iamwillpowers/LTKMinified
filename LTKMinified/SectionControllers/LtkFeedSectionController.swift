@@ -6,11 +6,13 @@
 //
 
 import IGListKit
+import SwiftUI
 
 final class LtkFeedSectionController: ListSectionController, ListWorkingRangeDelegate {
-    static let sideMargin: CGFloat = 16.0
+    static let sideMargin: CGFloat = 8.0
     private var ltkModel: LtkModel?
     private var ltkImage: UIImage?
+    
 
     override init() {
         super.init()
@@ -26,10 +28,9 @@ final class LtkFeedSectionController: ListSectionController, ListWorkingRangeDel
         let width: CGFloat = collectionContext?.containerSize.width ?? 0
         switch index {
         case 0:
-            let imageSize = ltkModel?.heroImageSize ?? CGSize(width: 0.0, height: 0.0000001)
-            let imageAspect = imageSize.width / imageSize.height
-            let normalizedHeight = (width - Self.sideMargin) * imageAspect
-            return CGSize(width: width, height: normalizedHeight)
+            let adjustedWidth = (width - Self.sideMargin)
+            let adjustedHeight = adjustedWidth * (ltkModel?.heroImageSize.aspect() ?? 0.0)
+            return CGSize(width: adjustedWidth, height: adjustedHeight)
         default:
             return CGSize.zero
         }
@@ -43,6 +44,20 @@ final class LtkFeedSectionController: ListSectionController, ListWorkingRangeDel
         return cell
     }
 
+    override func didSelectItem(at index: Int) {
+        guard
+            let ltkViewController = viewController as? LtkViewController,
+            let model = ltkModel
+        else { return }
+
+        let hostController = UIHostingController(rootView: DetailsView(ltkModel: model))
+        let view = UIImageView(image: UIImage(named: "logo"))
+        view.translatesAutoresizingMaskIntoConstraints = false
+        hostController.navigationItem.titleView = view
+        view.constrainWidthAndHeight(60, 22)
+        ltkViewController.navigationController?.pushViewController(hostController, animated: true)
+    }
+
     override func didUpdate(to object: Any) {
         guard let ltk = object as? LtkModel else { return }
         self.ltkModel = ltk
@@ -54,7 +69,7 @@ final class LtkFeedSectionController: ListSectionController, ListWorkingRangeDel
     ) {
         guard ltkImage == nil, let model = ltkModel else { return }
 
-        ProductService.shared.fetchProductImage(with: model.heroImage) { [weak self] result in
+        ProductService.shared.fetchImage(with: model.heroImageUrl) { [weak self] result in
             if case let .success(image) = result {
                 self?.handleImage(image)
             }
@@ -66,7 +81,8 @@ final class LtkFeedSectionController: ListSectionController, ListWorkingRangeDel
     private func handleImage(_ image: UIImage?) {
         guard let image = image else { return }
         DispatchQueue.main.async {
-            self.ltkImage = image
+            // store the image here in case the ltk is selected, so that details doesn't reload it
+            self.ltkModel?.heroImage = image
             if let cell = self.collectionContext?.cellForItem(at: 0, sectionController: self) as? LtkCell {
                 cell.setImage(image: image)
             }

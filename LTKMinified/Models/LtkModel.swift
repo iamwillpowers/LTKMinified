@@ -7,31 +7,30 @@
 
 import IGListKit
 
+/// This is the primary data model for the app, used on both the main screen and the details view.
+/// Everything pertaining to the initial hero image on the main feed, including relevant products and
+/// user profile are woven together in this class.
 final class LtkModel: ListDiffable {
-    let heroImage: String
+    let heroImageUrl: String
     let heroImageSize: CGSize
     let id: String
     let profileId: String
-    let profileUserId: String
-    let videoMediaId: String?
-    let status: String
     let caption: String
-    let shareUrl: String
-    let productIds: [String]
-    let title: String?
+    let products: [ProductModel]
+    let avatarUrl: String
+    let displayName: String
+    var heroImage: UIImage?
+    var avatar: UIImage?
 
-    init(from ltk: Ltk) {
-        heroImage = ltk.heroImage
-        heroImageSize = CGSize(width: ltk.heroImageWidth, height: ltk.heroImageHeight)
-        id = ltk.id
-        profileId = ltk.profileId
-        profileUserId = ltk.profileUserId
-        videoMediaId = ltk.videoMediaId
-        status = ltk.status
-        caption = ltk.caption
-        shareUrl = ltk.shareUrl
-        productIds = ltk.productIds
-        title = ltk.title
+    init(from ltk: Ltk, profile: Profile, products: [Product]) {
+        self.heroImageUrl = ltk.heroImage
+        self.heroImageSize = CGSize(width: ltk.heroImageWidth, height: ltk.heroImageHeight)
+        self.id = ltk.id
+        self.profileId = ltk.profileId
+        self.caption = ltk.caption
+        self.products = products.map { ProductModel(with: $0) }
+        self.avatarUrl = profile.avatarUrl
+        self.displayName = profile.displayName
     }
 
     func diffIdentifier() -> NSObjectProtocol {
@@ -41,6 +40,6 @@ final class LtkModel: ListDiffable {
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         guard self !== object else { return true }
         guard let ltk = object as? LtkModel else { return true }
-        return heroImage == ltk.heroImage && caption == ltk.caption && title == ltk.title
+        return heroImageUrl == ltk.heroImageUrl && caption == ltk.caption
     }
 }

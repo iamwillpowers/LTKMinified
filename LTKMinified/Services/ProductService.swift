@@ -3,7 +3,6 @@
 //  ProductViewer
 //
 //  Created by William Powers on 5/14/22.
-//  Copyright © 2022 Target. All rights reserved.
 //
 
 import UIKit
@@ -21,8 +20,6 @@ final class ProductService {
 
     static let shared = ProductService()
 
-    //var errorLogger: ErrorLogging = Logger
-
     private let fetchLtksUrl: String = "https://api-gateway.rewardstyle.com/api/ltk/v2/ltks/?featured=true&limit=20"
 
     func fetchProfiles(completion: @escaping ProductsCompletion) {
@@ -31,7 +28,7 @@ final class ProductService {
             return
         }
 
-        getRequest(URLRequest(url: targetURL)) { [weak self] result in
+        getRequest(URLRequest(url: targetURL)) { result in
             switch result {
             case .success(let data):
                 do {
@@ -46,7 +43,7 @@ final class ProductService {
         }
     }
 
-    func fetchProductImage(with url: String, completion: @escaping (Result<UIImage?, Error>) -> Void) {
+    func fetchImage(with url: String, completion: @escaping ImageCompletion) {
         guard let targetURL = URL(string: url) else {
             completion(.failure(ServiceError.invalidUrl))
             return
@@ -64,16 +61,11 @@ final class ProductService {
     }
 
     func getRequest(_ request: URLRequest, completion: @escaping DataCompletion) {
-        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+        URLSession.shared.dataTask(with: request) { data, response, error in
             let httpResponse = response as? HTTPURLResponse
             let statusCode = httpResponse?.statusCode ?? 0
 
             guard error == nil && data != nil && (200..<300).contains(statusCode) else {
-                if let httpResponse = httpResponse {
-                    // self?.errorLogger.logHTTP(error: error, request: request, response: httpResponse)
-                } else if let error = error {
-                    // self?.errorLogger.logNonFatal(error: error)
-                }
                 completion(.failure(ServiceError.requestError(error)))
                 return
             }

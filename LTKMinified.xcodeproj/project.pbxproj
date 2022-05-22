@@ -10,12 +10,8 @@
 		CD1863D52837054E000D320D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1863D42837054E000D320D /* AppDelegate.swift */; };
 		CD1863D72837054E000D320D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1863D62837054E000D320D /* SceneDelegate.swift */; };
 		CD1863DC2837054E000D320D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1863DA2837054E000D320D /* Main.storyboard */; };
-		CD1863DF2837054E000D320D /* LTKMinified.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD1863DD2837054E000D320D /* LTKMinified.xcdatamodeld */; };
 		CD1863E12837054F000D320D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1863E02837054F000D320D /* Assets.xcassets */; };
 		CD1863E42837054F000D320D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1863E22837054F000D320D /* LaunchScreen.storyboard */; };
-		CD1863EF2837054F000D320D /* LTKMinifiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1863EE2837054F000D320D /* LTKMinifiedTests.swift */; };
-		CD1863F92837054F000D320D /* LTKMinifiedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1863F82837054F000D320D /* LTKMinifiedUITests.swift */; };
-		CD1863FB2837054F000D320D /* LTKMinifiedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1863FA2837054F000D320D /* LTKMinifiedUITestsLaunchTests.swift */; };
 		CD18640B28370570000D320D /* LtkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18640828370570000D320D /* LtkResponse.swift */; };
 		CD18640C28370570000D320D /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18640A28370570000D320D /* ProductService.swift */; };
 		CD18641228370582000D320D /* LtkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18641028370582000D320D /* LtkViewModel.swift */; };
@@ -26,40 +22,21 @@
 		CD18641C28370CEE000D320D /* LtkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18641B28370CEE000D320D /* LtkModel.swift */; };
 		CD186422283728A4000D320D /* LtkFeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD186421283728A4000D320D /* LtkFeedSectionController.swift */; };
 		CD18642728372B65000D320D /* LtkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18642628372B65000D320D /* LtkCell.swift */; };
-		CD18642B28373958000D320D /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18642A28373958000D320D /* ProfileModel.swift */; };
+		CD18642F283801E5000D320D /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18642E283801E5000D320D /* UIView+NSLayoutConstraint.swift */; };
+		CD1864312839AB5E000D320D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1864302839AB5E000D320D /* ProductModel.swift */; };
+		CD1864332839C651000D320D /* CGSize+Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1864322839C651000D320D /* CGSize+Aspect.swift */; };
+		CD1864352839C784000D320D /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1864342839C784000D320D /* UIColor+Convenience.swift */; };
+		CD86B3C0283B1FA90025EA5C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD86B3BF283B1FA90025EA5C /* DetailsView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CD1863EB2837054F000D320D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD1863C92837054E000D320D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD1863D02837054E000D320D;
-			remoteInfo = LTKMinified;
-		};
-		CD1863F52837054F000D320D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD1863C92837054E000D320D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD1863D02837054E000D320D;
-			remoteInfo = LTKMinified;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CD1863D12837054E000D320D /* LTKMinified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTKMinified.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1863D42837054E000D320D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD1863D62837054E000D320D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CD1863DB2837054E000D320D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD1863DE2837054E000D320D /* LTKMinified.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LTKMinified.xcdatamodel; sourceTree = "<group>"; };
 		CD1863E02837054F000D320D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1863E32837054F000D320D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD1863E52837054F000D320D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD1863EA2837054F000D320D /* LTKMinifiedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTKMinifiedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1863EE2837054F000D320D /* LTKMinifiedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTKMinifiedTests.swift; sourceTree = "<group>"; };
-		CD1863F42837054F000D320D /* LTKMinifiedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTKMinifiedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1863F82837054F000D320D /* LTKMinifiedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTKMinifiedUITests.swift; sourceTree = "<group>"; };
-		CD1863FA2837054F000D320D /* LTKMinifiedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTKMinifiedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD18640828370570000D320D /* LtkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LtkResponse.swift; sourceTree = "<group>"; };
 		CD18640A28370570000D320D /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		CD18641028370582000D320D /* LtkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LtkViewModel.swift; sourceTree = "<group>"; };
@@ -67,7 +44,11 @@
 		CD18641B28370CEE000D320D /* LtkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtkModel.swift; sourceTree = "<group>"; };
 		CD186421283728A4000D320D /* LtkFeedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtkFeedSectionController.swift; sourceTree = "<group>"; };
 		CD18642628372B65000D320D /* LtkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtkCell.swift; sourceTree = "<group>"; };
-		CD18642A28373958000D320D /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		CD18642E283801E5000D320D /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		CD1864302839AB5E000D320D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		CD1864322839C651000D320D /* CGSize+Aspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Aspect.swift"; sourceTree = "<group>"; };
+		CD1864342839C784000D320D /* UIColor+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
+		CD86B3BF283B1FA90025EA5C /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,20 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD1863E72837054F000D320D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1863F12837054F000D320D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				CD1863D32837054E000D320D /* LTKMinified */,
-				CD1863ED2837054F000D320D /* LTKMinifiedTests */,
-				CD1863F72837054F000D320D /* LTKMinifiedUITests */,
 				CD1863D22837054E000D320D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				CD1863D12837054E000D320D /* LTKMinified.app */,
-				CD1863EA2837054F000D320D /* LTKMinifiedTests.xctest */,
-				CD1863F42837054F000D320D /* LTKMinifiedUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,33 +96,15 @@
 				CD1863E22837054F000D320D /* LaunchScreen.storyboard */,
 				CD1863E02837054F000D320D /* Assets.xcassets */,
 				CD1863E52837054F000D320D /* Info.plist */,
-				CD1863DD2837054E000D320D /* LTKMinified.xcdatamodeld */,
 			);
 			path = LTKMinified;
-			sourceTree = "<group>";
-		};
-		CD1863ED2837054F000D320D /* LTKMinifiedTests */ = {
-			isa = PBXGroup;
-			children = (
-				CD1863EE2837054F000D320D /* LTKMinifiedTests.swift */,
-			);
-			path = LTKMinifiedTests;
-			sourceTree = "<group>";
-		};
-		CD1863F72837054F000D320D /* LTKMinifiedUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CD1863F82837054F000D320D /* LTKMinifiedUITests.swift */,
-				CD1863FA2837054F000D320D /* LTKMinifiedUITestsLaunchTests.swift */,
-			);
-			path = LTKMinifiedUITests;
 			sourceTree = "<group>";
 		};
 		CD18640728370570000D320D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CD18641B28370CEE000D320D /* LtkModel.swift */,
-				CD18642A28373958000D320D /* ProfileModel.swift */,
+				CD1864302839AB5E000D320D /* ProductModel.swift */,
 				CD18642328372ADD000D320D /* ViewModel */,
 			);
 			path = Models;
@@ -185,6 +130,9 @@
 		CD18641D28371C32000D320D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD18642E283801E5000D320D /* UIView+NSLayoutConstraint.swift */,
+				CD1864322839C651000D320D /* CGSize+Aspect.swift */,
+				CD1864342839C784000D320D /* UIColor+Convenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CD18642628372B65000D320D /* LtkCell.swift */,
+				CD86B3BF283B1FA90025EA5C /* DetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,42 +187,6 @@
 			productReference = CD1863D12837054E000D320D /* LTKMinified.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD1863E92837054F000D320D /* LTKMinifiedTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD1864012837054F000D320D /* Build configuration list for PBXNativeTarget "LTKMinifiedTests" */;
-			buildPhases = (
-				CD1863E62837054F000D320D /* Sources */,
-				CD1863E72837054F000D320D /* Frameworks */,
-				CD1863E82837054F000D320D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD1863EC2837054F000D320D /* PBXTargetDependency */,
-			);
-			name = LTKMinifiedTests;
-			productName = LTKMinifiedTests;
-			productReference = CD1863EA2837054F000D320D /* LTKMinifiedTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CD1863F32837054F000D320D /* LTKMinifiedUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD1864042837054F000D320D /* Build configuration list for PBXNativeTarget "LTKMinifiedUITests" */;
-			buildPhases = (
-				CD1863F02837054F000D320D /* Sources */,
-				CD1863F12837054F000D320D /* Frameworks */,
-				CD1863F22837054F000D320D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD1863F62837054F000D320D /* PBXTargetDependency */,
-			);
-			name = LTKMinifiedUITests;
-			productName = LTKMinifiedUITests;
-			productReference = CD1863F42837054F000D320D /* LTKMinifiedUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,14 +199,6 @@
 				TargetAttributes = {
 					CD1863D02837054E000D320D = {
 						CreatedOnToolsVersion = 13.4;
-					};
-					CD1863E92837054F000D320D = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = CD1863D02837054E000D320D;
-					};
-					CD1863F32837054F000D320D = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = CD1863D02837054E000D320D;
 					};
 				};
 			};
@@ -314,8 +219,6 @@
 			projectRoot = "";
 			targets = (
 				CD1863D02837054E000D320D /* LTKMinified */,
-				CD1863E92837054F000D320D /* LTKMinifiedTests */,
-				CD1863F32837054F000D320D /* LTKMinifiedUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,20 +234,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD1863E82837054F000D320D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1863F22837054F000D320D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -353,9 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD18641228370582000D320D /* LtkViewModel.swift in Sources */,
-				CD1863DF2837054E000D320D /* LTKMinified.xcdatamodeld in Sources */,
 				CD18640B28370570000D320D /* LtkResponse.swift in Sources */,
-				CD18642B28373958000D320D /* ProfileModel.swift in Sources */,
+				CD1864312839AB5E000D320D /* ProductModel.swift in Sources */,
+				CD18642F283801E5000D320D /* UIView+NSLayoutConstraint.swift in Sources */,
+				CD1864332839C651000D320D /* CGSize+Aspect.swift in Sources */,
 				CD18641328370582000D320D /* LtkViewController.swift in Sources */,
 				CD1863D52837054E000D320D /* AppDelegate.swift in Sources */,
 				CD186422283728A4000D320D /* LtkFeedSectionController.swift in Sources */,
@@ -363,40 +253,12 @@
 				CD1863D72837054E000D320D /* SceneDelegate.swift in Sources */,
 				CD18640C28370570000D320D /* ProductService.swift in Sources */,
 				CD18642728372B65000D320D /* LtkCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1863E62837054F000D320D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD1863EF2837054F000D320D /* LTKMinifiedTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1863F02837054F000D320D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD1863F92837054F000D320D /* LTKMinifiedUITests.swift in Sources */,
-				CD1863FB2837054F000D320D /* LTKMinifiedUITestsLaunchTests.swift in Sources */,
+				CD86B3C0283B1FA90025EA5C /* DetailsView.swift in Sources */,
+				CD1864352839C784000D320D /* UIColor+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CD1863EC2837054F000D320D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD1863D02837054E000D320D /* LTKMinified */;
-			targetProxy = CD1863EB2837054F000D320D /* PBXContainerItemProxy */;
-		};
-		CD1863F62837054F000D320D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD1863D02837054E000D320D /* LTKMinified */;
-			targetProxy = CD1863F52837054F000D320D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CD1863DA2837054E000D320D /* Main.storyboard */ = {
@@ -547,6 +409,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,6 +438,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,82 +449,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CD1864022837054F000D320D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3V8S45MBDY;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.LTKMinifiedTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTKMinified.app/LTKMinified";
-			};
-			name = Debug;
-		};
-		CD1864032837054F000D320D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3V8S45MBDY;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.LTKMinifiedTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTKMinified.app/LTKMinified";
-			};
-			name = Release;
-		};
-		CD1864052837054F000D320D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3V8S45MBDY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.LTKMinifiedUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LTKMinified;
-			};
-			name = Debug;
-		};
-		CD1864062837054F000D320D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3V8S45MBDY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.LTKMinifiedUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LTKMinified;
 			};
 			name = Release;
 		};
@@ -681,24 +469,6 @@
 			buildConfigurations = (
 				CD1863FF2837054F000D320D /* Debug */,
 				CD1864002837054F000D320D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD1864012837054F000D320D /* Build configuration list for PBXNativeTarget "LTKMinifiedTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD1864022837054F000D320D /* Debug */,
-				CD1864032837054F000D320D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD1864042837054F000D320D /* Build configuration list for PBXNativeTarget "LTKMinifiedUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD1864052837054F000D320D /* Debug */,
-				CD1864062837054F000D320D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -733,19 +503,6 @@
 			productName = IGListSwiftKit;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		CD1863DD2837054E000D320D /* LTKMinified.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CD1863DE2837054E000D320D /* LTKMinified.xcdatamodel */,
-			);
-			currentVersion = CD1863DE2837054E000D320D /* LTKMinified.xcdatamodel */;
-			path = LTKMinified.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CD1863C92837054E000D320D /* Project object */;
 }

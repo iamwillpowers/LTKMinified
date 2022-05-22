@@ -9,7 +9,8 @@ import UIKit
 import IGListKit
 
 final class LtkViewController: UIViewController {
-    private let viewModel: LtkViewModel = LtkViewModel()
+    let viewModel: LtkViewModel = LtkViewModel()
+    
     private let collectionView: UICollectionView = {
         let view = UICollectionView(
             frame: .zero,
@@ -39,12 +40,14 @@ final class LtkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
+        let barButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        barButtonItem.tintColor = UIColor(r: 60, g: 60, b: 60)
+        navigationItem.backBarButtonItem = barButtonItem
 
         navigationItem.titleView = titleImageView
-        NSLayoutConstraint.activate([
-            titleImageView.widthAnchor.constraint(equalToConstant: 80),
-            titleImageView.heightAnchor.constraint(equalToConstant: 30)
-        ])
+        titleImageView.constrainWidthAndHeight(60, 22)
+
         view.backgroundColor = UIColor.systemBackground
         view.addSubview(collectionView)
         adapter.collectionView = collectionView
@@ -55,7 +58,6 @@ final class LtkViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.adapter.dataSource = self
                 }
-                print("success")
             case .failure(let error):
                 print(error)
             }
@@ -75,8 +77,7 @@ final class LtkViewController: UIViewController {
 
 extension LtkViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        print(viewModel.ltks.count)
-        return viewModel.ltks
+        return viewModel.ltkModels
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
